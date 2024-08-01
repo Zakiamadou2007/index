@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygiene Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    .category-item {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 300px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        width: 200px;
+        height: 160px;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hygiene Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Hygiene Store</h2>
+            <p>Your one-stop shop for all hygiene products</p>
+            <a href="#categories" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <h2>Our Categories</h2>
+        <div class="category-list">
+            <div class="category-item" style="background-image: url(men/men.1.jpg);" onclick="navigateToCategory1('men')">
+                <a href="https://zakiamadou2007.github.io/index.men/">
+                <h3>For Men</h3>
+                </a>
+            </div>
+            <div class="category-item" style="background-image: url(women/women.1.jpg);" onclick="navigateToCategory2('women')">
+                <a href="https://zakiamadou2007.github.io/index.women/">
+                <h3>For Women</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hygiene Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+    <script>
+        function navigateToCategory1(category) {
+            window.location.href = 'https://zakiamadou2007.github.io/index.men/';
+        }
+
+        function navigateToCategory2(category) {
+            window.location.href = 'https://zakiamadou2007.github.io/index.women/';
+        }
+    </script>
+</body>
+</html>
